@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:700|Roboto:100,300,700');
 
- * {
+* {
   margin: 0;
   padding: 0;
 }
@@ -12,7 +12,11 @@ body {
   font-weight: 300;
 }
 
-h1,h2,h3,h4,h5 {
+h1,
+h2,
+h3,
+h4,
+h5 {
   font-family: 'Roboto Condensed';
 }
 
@@ -51,58 +55,64 @@ h5 {
   margin-bottom: 0;
 }
 
-#general-information .text{
-  font-size: 2em;
-  font-weight: 100;
-  text-align: center;
-  margin: 20px, 0;
+#general-information {
+  display: flex;
+  justify-content: space-evenly;
 }
 
-#general-information  .container{
+#general-information .container {
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 370px;
 }
 
-#structure{
+#general-information .text {
+  font-size: 2em;
+  font-weight: 100;
+  text-align: center;
+  margin: 20px, 0;
+}
 
-} 
+#team>div>article {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
 
-#team .section-text{
-padding: 75px 0;
-margin: 0 auto;
-width: 60%;
-margin: 10px auto;
-font-size: 1.9em;
-text-align: center;
-} 
+#team .section-text {
+  width: 60%;
+  margin: 10px auto;
+  font-size: 1.9em;
+  text-align: center;
+}
 
 #team hr {
   margin: 20px auto 30px;
   width: 40%;
 }
 
-#team .member-name{
+#team .member-name {
   font-size: 1.5em;
   font-weight: 700;
+  display: block;
+  text-align: center;
 }
 
-#team img{
+#team img {
   width: 250px;
   height: 180px;
 }
 
-#structure div {
-  display:flex;
+#structure>div {
+  display: flex;
   justify-content: space-between;
   flex-direction: row;
   flex-wrap: wrap;
-  }
-
-#schedule{
-
 }
+
+#schedule {}
 
 .nav-bar a {
   background: rgb(25, 33, 41);
@@ -113,14 +123,14 @@ text-align: center;
 }
 
 .nav-bar-ul {
-background: rgb(25, 33, 41);
-width: 1200px;
-margin: 0 auto;
-display: flex;
-justify-content: space-evenly;
+  background: rgb(25, 33, 41);
+  width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-evenly;
 }
 
-.nav-bar-ul li{
+.nav-bar-ul li {
   list-style-type: none;
   text-align: center;
 }
@@ -140,14 +150,12 @@ justify-content: space-evenly;
   bottom: 100px;
 }
 
-.dark-background{
+.dark-background {
   background-color: rgb(25, 33, 41);
   color: white;
-  display: flex;
-  justify-content:space-evenly;
 }
 
-.link-btn{
+.link-btn {
   background-color: rgb(67, 163, 230);
   color: white;
   font-family: 'Roboto Condensed';
@@ -156,35 +164,39 @@ justify-content: space-evenly;
   text-align: center;
   text-decoration: none;
   padding: 10px 30px;
+  width: 150px;
 }
 
-.service-box{
+.service-box {
   font-size: 1.7em;
   text-align: center;
   border: 2px, solid, #eee;
   border-radius: 20px;
   box-sizing: border-box;
   box-shadow: 2px 2px 10px 0 #eee;
-  margin: 50px 5%  0;
+  margin: 50px 5% 0;
   padding: 20px;
   width: 40%;
 }
 
-.service-box img{
+.service-box img {
   width: 125px;
 }
 
-.footer{
+.footer {
   font-size: 1.9em;
   text-align: center;
   padding: 40px 100px;
   margin-bottom: 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.footer .address{
-font-style: normal;
-font-size: 0.8em;
-margin-bottom: 30px;
+.footer .address {
+  font-style: normal;
+  font-size: 0.8em;
+  margin-bottom: 30px;
 }
 
 .footer .link {
@@ -192,26 +204,58 @@ margin-bottom: 30px;
   text-decoration: none;
 }
 
-.footer ul{
+.footer ul {
   list-style: none;
   padding: 0;
 }
 
-.container{
+.container {
   width: 1200px;
   margin: 0 auto;
   padding: 75px, 0;
 }
 
-.schedule-table{
+.schedule-table {
   margin: 0 auto 40px;
-  font-size: 1,5em;
+  font-size: 1, 5em;
   padding: 5px, 10px;
   text-align: center;
 }
 
 .schedule-table th,
-td{
+td {
   border-bottom: 1px solid #000;
 }
 
+.footer .map-frame {
+  height: 375px;
+  width: 60%;
+}
+
+.slot-form-container {
+  width: 40%;
+  margin: 18px auto 0;
+  font-size: 1.5em;
+  text-align: center;
+}
+
+.slot-form-container label {
+  line-height: 15px;
+  margin: 5px;
+}
+
+.slot-form-container input,
+.slot-form-container select {
+  height: 20px;
+  outline: none;
+  padding: 3px;
+  width: 100%;
+}
+
+.slot-form-container button {
+  border: 1px solid black;
+  color: black;
+  background: white;
+  padding: 9px;
+  margin-top: 15px;
+}
