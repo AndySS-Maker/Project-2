@@ -55,6 +55,7 @@ h5 {
   display: flex;
   justify-content: space-evenly;
   padding: 75px 0;
+  width: 1400px;
 }
 
 #general-information .container {
@@ -98,8 +99,8 @@ h5 {
 }
 
 #team img {
-  width: 250px;
-  height: 180px;
+  width: 350px;
+  height: 250px;
 }
 
 #structure>div {
@@ -118,11 +119,13 @@ h5 {
   width: 1200px;
   margin: 0 auto;
   padding: 75px, 0;
+  display: block;
 }
 
 .container-team{
   display: flex;
   height: 400px;
+  justify-content: space-evenly;
 }
 
 .nav-bar a {
@@ -135,7 +138,7 @@ h5 {
 
 .nav-bar-ul {
   background: rgb(25, 33, 41);
-  width: 1200px;
+  width: 1400px;
   margin: 0 auto;
   display: flex;
   justify-content: space-evenly;
@@ -150,8 +153,10 @@ h5 {
   background: url(https://s3-eu-west-1.amazonaws.com/ih-materials/uploads/ironhack-skydive-background.jpg) 0 0 no-repeat;
   background-size: cover;
   height: 650px;
+  width: 1400px;
   padding-top: 50px;
   position: relative;
+  display: block;
 }
 
 .quote {
@@ -216,8 +221,8 @@ h5 {
 }
 
 .footer .map-frame {
-  height: 375px;
-  width: 110%;
+  height: 380px;
+  width: 800px;
 }
 
 .schedule-table {
@@ -258,4 +263,9 @@ td {
   background: white;
   padding: 9px;
   margin-top: 15px;
+}
+
+.structure-container{
+  margin: 0 auto;
+  padding: 75px 0;
 }
